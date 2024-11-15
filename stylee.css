@@ -1,0 +1,263 @@
+
+@font-face {
+    font-family: complate-header;
+    src: url(FONTS/nunito/Nunito-ExtraLight.ttf);
+}
+@font-face {
+    font-family: content;
+    src: url(FONTS/monoRoboto/RobotoMono-ExtraLight.ttf);
+}
+@font-face {
+    font-family: content-2;
+    src: url(FONTS/inter/Inter_18pt-Black.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo,h1,h2,h3,h4,h5,h6{
+    font-family: complate-header !important;
+    letter-spacing: 8px;
+}
+header a {
+    font-family: complate-header;
+}
+p {
+    font-family: content;
+}
+h2 {
+    border-bottom: 4px solid antiquewhite;
+    border-radius: 2px;
+}
+body {
+    background:linear-gradient(to left top , #361b13, #7c4030);
+}
+#content-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    background-color: #47241a;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: -4px 10px 4px  #47241a93;
+    position: relative;
+    z-index: -2;
+}
+#left-side {
+    flex-basis: 40%;
+}
+#right-side {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+#left-side img {
+    display: block;
+    box-shadow: -15px -10px 20px  rgba(0, 0, 0, 0.507);
+    opacity: 0.6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+p {
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
+    font-size: 20px;
+}
+p,h2,span {
+    padding: 10px 0;
+}
+h2{
+    font-size: 100px;
+}
+span {
+    font-size: 20px;
+}
+.bg {
+    background-image: url(ASSESTS/IMG/beans2.jpg);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    filter: blur(2px);
+}
+.header {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+li,a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+
+.top-nav #left-ul,#right-ul {
+    display: inline-flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    padding: 10px;
+    
+}
+header a {
+    font-size: 18px;
+    color: antiquewhite;
+    transition: color,padding-bottom 350ms;
+}
+
+header li:hover a {
+    position: relative;
+    border-bottom: 2px solid burlywood;
+    padding-bottom: 10px;
+    color: burlywood;
+    font-size: 20px;
+}
+.logo {
+    font-size: 32px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+    margin: 0 20px;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+}
+.top-nav:first-child #left-ul {
+    justify-content: end;
+
+}
+.top-nav:last-child #right-ul{
+    justify-content: start;
+}
+.logo {
+    color: antiquewhite;
+    border-color: #9e7f76;
+    padding: 20px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    text-shadow: 4px 4px 10px aliceblue;
+}
+
+/* hovers  */
+
+
+/* hovers  */
+
+
+p::selection {
+    background-color: salmon;
+}
+#right-side p::first-letter {
+    font-size: 62px;
+    color: #ffe9e2;
+    text-shadow: 4px 2px 3px  #9e7f76;
+    padding: 5px;
+}
+#right-side p {
+    color: aliceblue;
+    text-shadow: 1px 1px 5px aliceblue;
+    text-align: justify;
+}
+
+h2:nth-child(2) {
+
+    color: antiquewhite;
+}
+span:nth-child(1) {
+    color: salmon;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+
+/* marketing */
+#marketing {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   border-radius: 100px;
+   padding: 20px;
+   position: relative;
+
+}
+.imgs{
+    width: 25%;
+    border-radius: 100px;
+   object-fit: cover;
+   transition: 1000ms;
+
+}
+.imgs:hover {
+    border-radius: 10px;
+    object-position: right top;
+    object-position: bottom top;
+}
+section {
+    overflow: hidden;
+
+    margin: 50px;
+    border: 1px solid aliceblue;
+}
+section h3 {
+    padding: 50px;
+    border: 1px solid aliceblue;
+    width: fit-content;
+    margin: 50px;
+}
+article {
+    font-family: content;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+
+/* marketing */
+
+#owner {
+    display: flex;
+    align-items: center;
+}
+#owner img {
+    margin: 20px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+#owner-name {
+    color: rgb(214, 163, 139);
+    letter-spacing: 10px;
+    word-spacing: 1px;
+    text-shadow: 2px 2px 10px salmon;
+}
